@@ -4,7 +4,7 @@
 #   modified: 2019/04/23
 
 sudo apt update
-sudo apt install -y ssh vim git  gcc make cmake g++ gdb \
+sudo apt install -y ssh vim gcc make cmake g++ gdb \
                     build-essential libncurses5-dev bison flex libssl-dev libelf-dev \
                     gcc-multilib g++-multilib binutils-multiarch libcap-dev libtesseract-dev \
                     python3 ipython-notebook \
@@ -23,6 +23,11 @@ sudo apt update
 sudo apt install sublime-text
 
 MYPWD=$(pwd)
+
+#Intsall Google Chrome
+wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo rm google-chrome-stable_current_amd64.deb
 
 cd ~
 
