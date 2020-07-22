@@ -47,6 +47,10 @@ git config --global alias.st status
 git config --global alias.cm "commit -m"
 
 
-source ~/.bashrc
-
+# include .profile if it exists
+if [ -f "$HOME/.profile" ]; then
+	. "$HOME/.profile"
+else
+	. "$HOME/.bashrc"
+fi
 
